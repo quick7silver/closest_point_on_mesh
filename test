@@ -10,6 +10,7 @@ Requirements:
 
 - Please provide any design notes, tests, (generated) documentation etc that would assist others maintaining your code.
 
+
 A possible interface is:
 
 class ClosestPointQuery
