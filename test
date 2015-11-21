@@ -1,0 +1,25 @@
+Please implement an efficient closest point on mesh query in C++.
+
+Requirements:
+- You may use any supporting libraries you like to provide C++ memory management, containers, geometry types
+(mesh, point, uv), etc however the core algorithm must be implemented explicitly.
+
+- Implementation should be efficient for repeated point queries on a particular mesh
+
+- List any assumptions required.
+
+- Please provide any design notes, tests, (generated) documentation etc that would assist others maintaining your code.
+
+A possible interface is:
+
+class ClosestPointQuery
+{
+public:
+ClosestPointQuery(const Mesh& m);
+
+//! Return the closest point to the mesh within the specified
+maximum search distance.
+
+Point operator() (const Point& queryPoint, float maxDist) const;
+
+};
